@@ -1,16 +1,3 @@
-POST http://localhost:1337/api/qcm/informatique
-content-type: application/json
-
-{
-        "numQuestion": 1,
-        "question": "fjsdlkmjfsqjfdlk",
-        "reponseA": "nvjdskqvn",
-        "reponseB": "ndsjivcj",
-        "reponseC": "jmjkmijl",
-        "reponseD": "aeazarezarez",
-        "valide": 2
-}
-###
 GET http://localhost:1337/api/qcm/informatique
 content-type: application/json
 ###
@@ -150,4 +137,394 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxN
 ###
 POST http://localhost:1337/api/auth/local/logout
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZm9vYmFyIiwiaWF0IjoxNzAyMDUwNjU2LCJleHAiOjE3MDIwNTQyNTZ9.JIs7iDTcxFEdH1farW5e5tLsrjEFRom3p-enfGhXolo
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 2,
+        "question": "Quelle est la fonction principale d'un système d'exploitation ?",
+        "reponseA": "Contrôler les performances de l'ordinateur",
+        "reponseB": "Gérer la connexion Internet",
+        "reponseC": "Gérer les ressources matérielles et fournir des services aux programmes",
+        "reponseD": "Gérer les logiciels installés sur l'ordinateur",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 3,
+        "question": "Qu'est-ce qu'un algorithme ?",
+        "reponseA": "Une série d'instructions pour accomplir une tâche donnée",
+        "reponseB": "Un langage de programmation",
+        "reponseC": "Un type de logiciel",
+        "reponseD": "Un périphérique de stockage de données",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 4,
+        "question": "Quelle est la différence entre RAM et ROM ?",
+        "reponseA": "La RAM est volatile et la ROM est non volatile",
+        "reponseB": "La RAM est une unité de mesure de la vitesse du processeur et la ROM est une unité de mesure de la capacité de stockage",
+        "reponseC": "Il n'y a pas de différence significative",
+        "reponseD": "La RAM est utilisée pour le stockage permanent et la ROM pour le stockage temporaire",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 5,
+        "question": "Quelle est la fonction de base de SQL (Structured Query Language) ?",
+        "reponseA": "Éditer des vidéos",
+        "reponseB": "Interagir avec des bases de données",
+        "reponseC": "Créer des graphiques",
+        "reponseD": "Gérer les fichiers multimédias",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 6,
+        "question": "Quel langage de programmation est souvent utilisé pour le développement web côté serveur ?",
+        "reponseA": "Java",
+        "reponseB": "Python",
+        "reponseC": "PHP",
+        "reponseD": "JavaScript",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 7,
+        "question": "Quelle est l'utilité d'une boucle dans la programmation ?",
+        "reponseA": "Répéter une série d'instructions",
+        "reponseB": "Créer une interface utilisateur",
+        "reponseC": "Choisir entre deux options",
+        "reponseD": "Interrompre l'exécution du programme",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 8,
+        "question": "Qu'est-ce que l'adresse IP (Internet Protocol)",
+        "reponseA": "Un identifiant unique attribué à chaque périphérique sur un réseau",
+        "reponseB": "Un type de routeur sans fil",
+        "reponseC": "Un protocole de compression de fichiers",
+        "reponseD": "Un code de programmation pour les jeux en ligne",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 9,
+        "question": "Quel est le but principal d'un pare-feu (firewall)",
+        "reponseA": "Bloquer l'accès non autorisé à un réseau",
+        "reponseB": "Améliorer la qualité audio d'un système",
+        "reponseC": "Améliorer la vitesse de connexion Internet",
+        "reponseD": "Hyperlink and Text Markup LanguageContrôler l'éclairage d'un bâtiment",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 10,
+        "question": "Qu'est-ce qu'un fichier au format PDF ?",
+        "reponseA": "Portable Document Format",
+        "reponseB": "Personal Data",
+        "reponseC": "Printed Document File",
+        "reponseD": "Programmable Document File",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 11,
+        "question": "Qu'est-ce qu'un algorithme?",
+        "reponseA": "Une unité de stockage",
+        "reponseB": "Un langage de programmation",
+        "reponseC": "Une série d'instructions pour résoudre un problème",
+        "reponseD": "Un ordinateur puissant",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 12,
+        "question": "Quel est le langage de programmation utilisé pour développer des applications Android?",
+        "reponseA": "C#",
+        "reponseB": "Java",
+        "reponseC": "Python",
+        "reponseD": "Ruby",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 13,
+        "question": "Quelle est la base du système binaire?",
+        "reponseA": "10",
+        "reponseB": "2",
+        "reponseC": "16",
+        "reponseD": "8",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 14,
+        "question": "Que signifie l'acronyme HTML en informatique?",
+        "reponseA": "Hyper Text Markup Language",
+        "reponseB": "High Technology Modern Language",
+        "reponseC": "Human Test Machine Learning",
+        "reponseD": "Hyper Transfer Model Language",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 15,
+        "question": "Quel est le principal objectif du langage de programmation Python?",
+        "reponseA": "Développer des sites web interactifs",
+        "reponseB": "Automatiser des tâches et résoudre des problèmes",
+        "reponseC": "Créer des applications mobiles",
+        "reponseD": "Concevoir des jeux vidéo",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 16,
+        "question": "Quelle est la fonction principale d'un système d'exploitation?",
+        "reponseA": "Imprimer des fichiers",
+        "reponseB": "Contrôler le matériel de l'ordinateur",
+        "reponseC": "Créer des documents",
+        "reponseD": "Stocker des données",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 17,
+        "question": "Quel est le symbole utilisé pour les commentaires en Python?",
+        "reponseA": "/* */",
+        "reponseB": "#",
+        "reponseC": "//",
+        "reponseD": "--",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 18,
+        "question": "Quelle est l'unité de mesure de la vitesse d'un processeur?",
+        "reponseA": "Hertz",
+        "reponseB": "Kilobit",
+        "reponseC": "Byte",
+        "reponseD": "Watt",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 19,
+        "question": "Quel type de boucle permet de répéter un bloc de code tant qu'une condition est vraie en Python?",
+        "reponseA": "Boucle for",
+        "reponseB": "Boucle while",
+        "reponseC": "Boucle do-while",
+        "reponseD": "Boucle if",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 20,
+        "question": "Que signifie l'acronyme URL en informatique?",
+        "reponseA": "Unique Relative Link",
+        "reponseB": "Unified Response Line",
+        "reponseC": "Universal Resource Locator",
+        "reponseD": "Uniform Request Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "reponseA": "Home Tool for Managing Links",
+        "reponseB": "High-Level Text Markup Language",
+        "reponseC": "HyperText Markup Language",
+        "reponseD": "Hyperlink and Text Markup Language",
+        "valide": 3
+}
 
