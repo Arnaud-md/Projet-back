@@ -124,6 +124,23 @@ export const QCM = sequelize.define('QCM_content', {
         timestamps: false,
 });
 
+export const Result = sequelize.define('Results', {
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    score: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    subject: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
+},{
+        timestamps: false,
+});
+
 export const Recipe = sequelize.define('Recipes', {
     // Chaque champ correspond à une colonne dans la table
     nom: {

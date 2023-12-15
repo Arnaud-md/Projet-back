@@ -1,6 +1,6 @@
 import express, { Request } from "express";
 import 'dotenv/config';
-import {Jeu, JeuOfficial, QCM, Recipe, User, sequelize} from './seqconfig';
+import {Jeu, JeuOfficial, QCM, Recipe, Result, User, sequelize} from './seqconfig';
 import bodyParser from "body-parser";
 import { IntegerDataType } from "sequelize";
 import cors from "cors";
@@ -154,6 +154,20 @@ interface IMaRequetBody {
     else {
       res.status(400).send("l'email saisi n'est pas le bon");
     }
+  })
+
+  app.post("/api/results", (req, res) => {
+    const mail = req.body.email;
+    const score = req.body.score;
+    const subject = req.body.subject;
+    const monResultat = { email:mail, score ,subject }
+    console.log(monResultat);
+    Result.create(monResultat);
+    res.json(monResultat);
+  })
+  app.get("/api/results", async(req, res) => {
+    const allResults = await Result.findAll();
+    res.json(allResults);
   })
 
   app.post("/api/free-games", (req, res) => {

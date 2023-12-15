@@ -1,7 +1,7 @@
 GET http://localhost:1337/api/qcm/informatique
 content-type: application/json
 ###
-GET http://localhost:1337/api/qcm/informatique/1
+GET http://localhost:1337/api/qcm/informatique/19
 content-type: application/json
 ###
 POST http://localhost:1337/api/auth/local/register
@@ -47,6 +47,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxN
 
 ###
 GET http://localhost:1337/api/users
+content-type: application/json
+###
+POST http://localhost:1337/api/results
+content-type: application/json
+
+{
+        "email": "me@gmail.com",
+        "score": 8,
+        "subject": "informatique"
+}
+###
+GET http://localhost:1337/api/results
 content-type: application/json
 ###
 POST http://localhost:1337/api/free-games
@@ -402,12 +414,25 @@ POST http://localhost:1337/api/qcm/informatique
 content-type: application/json
 
 {
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
+        "numQuestion": 21,
+        "question": "Quelle est la signification de l'acronyme RAM?",
+        "reponseA": "Remote Access Module",
+        "reponseB": "Random Access Memory",
+        "reponseC": "Rapid Application Management",
+        "reponseD": "Read-Only Memory",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 22,
+        "question": "Quel langage de programmation est principalement utilisé pour le développement de pages web interactives?",
+        "reponseA": "Ruby",
+        "reponseB": "Java",
+        "reponseC": "JavaScript",
+        "reponseD": "C++",
         "valide": 3
 }
 ###
@@ -415,12 +440,51 @@ POST http://localhost:1337/api/qcm/informatique
 content-type: application/json
 
 {
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
+        "numQuestion": 23,
+        "question": "Quelle est la fonction du système d'exploitation Windows?",
+        "reponseA": "Gérer les fichiers et ressources matérielles de l'ordinateur",
+        "reponseB": "Naviguer sur Internet",
+        "reponseC": "Créer des présentations",
+        "reponseD": "Contrôler la température de l'ordinateur",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 24,
+        "question": "Quel est le rôle du pare-feu (firewall) en informatique?",
+        "reponseA": "Protéger l'ordinateur contre les virus",
+        "reponseB": "Améliorer la vitesse de connexion Internet",
+        "reponseC": "Bloquer les publicités sur Internet",
+        "reponseD": "Contrôler l'accès réseau et protéger contre les menaces",
+        "valide": 4
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 25,
+        "question": "Quel langage de programmation est associé à la création de bases de données?",
+        "reponseA": "Java",
+        "reponseB": "SQL",
+        "reponseC": "Ruby",
+        "reponseD": "Python",
+        "valide": 2
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 26,
+        "question": "Quelle est la différence entre un logiciel open source et un logiciel propriétaire?",
+        "reponseA": "Les logiciels open source sont développés par des entreprises, tandis que les logiciels propriétaires sont développés par des individus",
+        "reponseB": "Il n'y a pas de différence significative",
+        "reponseC": "Les logiciels open source sont distribués avec leur code source, tandis que les logiciels propriétaires ne le sont pas",
+        "reponseD": "Les logiciels open source sont gratuits, tandis que les logiciels propriétaires sont payants",
         "valide": 3
 }
 ###
@@ -428,12 +492,12 @@ POST http://localhost:1337/api/qcm/informatique
 content-type: application/json
 
 {
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
+        "numQuestion": 27,
+        "question": "Quel langage de programmation est souvent utilisé pour le développement de jeux vidéo?",
+        "reponseA": "PHP",
+        "reponseB": "COBOL",
+        "reponseC": "C#",
+        "reponseD": "Fortran",
         "valide": 3
 }
 ###
@@ -441,12 +505,25 @@ POST http://localhost:1337/api/qcm/informatique
 content-type: application/json
 
 {
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
+        "numQuestion": 28,
+        "question": "Qu'est-ce qu'un fichier avec l'extension .jpg?",
+        "reponseA": "Un fichier image",
+        "reponseB": "Un fichier texte",
+        "reponseC": "Un fichier audio",
+        "reponseD": "Un fichier texte",
+        "valide": 1
+}
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 29,
+        "question": "Quel est le protocole de transfert de courrier électronique standard sur Internet?",
+        "reponseA": "TCP/IP",
+        "reponseB": "FTP",
+        "reponseC": "SMTP",
+        "reponseD": "HTTP",
         "valide": 3
 }
 ###
@@ -454,77 +531,12 @@ POST http://localhost:1337/api/qcm/informatique
 content-type: application/json
 
 {
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
-}
-###
-POST http://localhost:1337/api/qcm/informatique
-content-type: application/json
-
-{
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
-}
-###
-POST http://localhost:1337/api/qcm/informatique
-content-type: application/json
-
-{
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
-}
-###
-POST http://localhost:1337/api/qcm/informatique
-content-type: application/json
-
-{
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
-}
-###
-POST http://localhost:1337/api/qcm/informatique
-content-type: application/json
-
-{
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
-}
-###
-POST http://localhost:1337/api/qcm/informatique
-content-type: application/json
-
-{
-        "numQuestion": 1,
-        "question": "Qu'est-ce que le HTML ?",
-        "reponseA": "Home Tool for Managing Links",
-        "reponseB": "High-Level Text Markup Language",
-        "reponseC": "HyperText Markup Language",
-        "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
+        "numQuestion": 30,
+        "question": "Quelle est la fonction principale de la mémoire cache d'un processeur?",
+        "reponseA": "Exécuter des logiciels",
+        "reponseB": "Accélérer l'accès aux données fréquemment utilisées",
+        "reponseC": "Stocker de grandes quantités de données",
+        "reponseD": "Contrôler les ventilateurs du processeur",
+        "valide": 2
 }
 
