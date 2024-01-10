@@ -53,8 +53,8 @@ POST http://localhost:1337/api/results
 content-type: application/json
 
 {
-        "email": "me@gmail.com",
-        "score": 8,
+        "email": "me2@gmail.com",
+        "score": 9,
         "subject": "informatique"
 }
 ###
@@ -533,6 +533,20 @@ content-type: application/json
 {
         "numQuestion": 30,
         "question": "Quelle est la fonction principale de la mémoire cache d'un processeur?",
+        "reponseA": "Exécuter des logiciels",
+        "reponseB": "Accélérer l'accès aux données fréquemment utilisées",
+        "reponseC": "Stocker de grandes quantités de données",
+        "reponseD": "Contrôler les ventilateurs du processeur",
+        "valide": 2
+}
+
+###
+POST http://localhost:1337/api/qcm/informatique
+content-type: application/json
+
+{
+        "numQuestion": 1,
+        "question": "Qu'est-ce que le principe de conservation de l'énergie ?",
         "reponseA": "Exécuter des logiciels",
         "reponseB": "Accélérer l'accès aux données fréquemment utilisées",
         "reponseC": "Stocker de grandes quantités de données",
