@@ -136,6 +136,22 @@ interface IMaRequetBody {
     const allUsers = await User.findAll();
     res.status(200).send(JSON.stringify(allUsers));
   })
+  app.post("/api/users", async(req, res) => {
+    const nom = req.body.nom;
+    const prenom = req.body.prenom;
+    const email = req.body.email;
+    const ismasculin = req.body.ismasculin;
+    const filiere = req.body.filiere;
+    const mention = req.body.mention;
+    const etudes = req.body.etudes;
+    const password = req.body.password;
+    if (nom!==null) {
+      const monResultat = {nom, prenom , email, ismasculin, filiere, mention, etudes, password }
+      console.log("monResultat : ", monResultat);
+      await User.create(monResultat);
+      res.status(200).json(monResultat);
+    }
+  })
   app.post("/api/auth/local", async(req, res) => {
     const email = req.body.email;
     const password = req.body.password;

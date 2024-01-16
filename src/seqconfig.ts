@@ -68,8 +68,8 @@ export const User = sequelize.define('Users', {
         allowNull: false
     },
     ismasculin: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
+        type: DataTypes.BOOLEAN
+
     },
     filiere: {
         type: DataTypes.STRING,
