@@ -1,10 +1,10 @@
 GET http://localhost:8887/api/qcm/informatique
 content-type: application/json
 ###
-GET http://localhost:1887/api/qcm/informatique/19
+GET http://localhost:8887/api/qcm/informatique/19
 content-type: application/json
 ###
-POST http://localhost:1337/api/auth/local/register
+POST http://localhost:8887/api/auth/local/register
 content-type: application/json
 
 {
@@ -30,11 +30,6 @@ content-type: application/json
 
 ###
 
-GET http://localhost:8887/api/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc1MzE4LCJleHAiOjE3MDQzNjczMTh9.Pd10AzyjGGIXYOZ5H1gis-NiNIj5i9P8d9YTda0UfWA
-
-###
-
 POST http://localhost:1337/api/auth/change-password
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc1MzE4LCJleHAiOjE3MDQzNjczMTh9.Pd10AzyjGGIXYOZ5H1gis-NiNIj5i9P8d9YTda0UfWA
@@ -48,6 +43,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxN
 ###
 GET http://localhost:8887/api/users
 content-type: application/json
+###
+GET http://localhost:8887/api/users/me
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZm9vYmFyIiwiaWF0IjoxNzA1NDg0NTg0LCJleHAiOjE3MDU0ODgxODR9.G2iEWj0Ltf8yCDh64JVz45EPGdq8nK91KP9AOqr11R0
 ###
 POST http://localhost:8887/api/users
 content-type: application/json
@@ -167,7 +166,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxN
 POST http://localhost:1337/api/auth/local/logout
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZm9vYmFyIiwiaWF0IjoxNzAyMDUwNjU2LCJleHAiOjE3MDIwNTQyNTZ9.JIs7iDTcxFEdH1farW5e5tLsrjEFRom3p-enfGhXolo
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -180,7 +179,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -193,7 +192,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -206,7 +205,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -219,7 +218,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -232,7 +231,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -245,7 +244,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -258,7 +257,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -271,7 +270,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -284,7 +283,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -297,7 +296,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -310,7 +309,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -323,7 +322,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -336,7 +335,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -349,7 +348,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -362,7 +361,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -375,7 +374,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -388,7 +387,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -401,7 +400,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -414,7 +413,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -427,7 +426,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -440,7 +439,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -453,7 +452,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -466,7 +465,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -479,7 +478,7 @@ content-type: application/json
         "valide": 4
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -492,7 +491,7 @@ content-type: application/json
         "valide": 2
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -505,7 +504,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -518,7 +517,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -531,7 +530,7 @@ content-type: application/json
         "valide": 1
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
@@ -544,7 +543,7 @@ content-type: application/json
         "valide": 3
 }
 ###
-POST http://localhost:1337/api/qcm/informatique
+POST http://localhost:8887/api/qcm/informatique
 content-type: application/json
 
 {
