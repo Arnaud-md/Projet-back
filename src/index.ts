@@ -10,7 +10,7 @@ import { TokenBlackListModel } from "./model/TokenBlackList";
 import { DecodeToken, checkToken } from "./middlewares/checkToken";
 import { UserModel } from "./model/User";
 import { userRouter } from "./router/users";
-import { qcmRouter } from "./router/qcm";
+import { qcminfoRouter } from "./router/qcminfo";
 import { authRouter } from "./router/auth";
 import { QCMModel } from "./model/QCM";
 import { resultRouter } from "./router/results";
@@ -57,7 +57,7 @@ interface IMaRequetBody {
     note: IntegerDataType
   }
   const apiRouter = express.Router();
-  apiRouter.use('/qcm/informatique', qcmRouter);
+  apiRouter.use('/qcm/informatique', qcminfoRouter);
   apiRouter.use('/auth', authRouter);
   apiRouter.use('/users', userRouter);
   apiRouter.use('/results', resultRouter);

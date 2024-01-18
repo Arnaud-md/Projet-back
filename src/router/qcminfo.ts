@@ -1,9 +1,10 @@
 import { Router } from "express";
 import { QCM } from "..";
 
-export const qcmRouter = Router();
+export const qcminfoRouter = Router();
 
-qcmRouter.post("/", (req, res) => {
+qcminfoRouter.post("/", (req, res) => {
+    const subject = "informatique";
     const numQuestion= req.body.numQuestion;
     const question = req.body.question;
     const reponseA = req.body.reponseA;
@@ -11,16 +12,16 @@ qcmRouter.post("/", (req, res) => {
     const reponseC = req.body.reponseC;
     const reponseD = req.body.reponseD;
     const bonnereponse = req.body.valide;
-    const monQCM = { numQuestion, question, reponseA, reponseB, reponseC, reponseD, valide:bonnereponse };
+    const monQCM = { subject, numQuestion, question, reponseA, reponseB, reponseC, reponseD, valide:bonnereponse };
     console.log("monQCM : ",monQCM);
     QCM.create(monQCM);
     res.json(monQCM);
 })
-qcmRouter.get("/", async(req, res) => {
+qcminfoRouter.get("/", async(req, res) => {
     const allQCM = await QCM.findAll();
     res.status(200).send(JSON.stringify(allQCM));
 })
-qcmRouter.get("/:numQuestion", async(req, res) => {
+qcminfoRouter.get("/:numQuestion", async(req, res) => {
     const monQCM = await QCM.findOne({where:{numQuestion:req.params.numQuestion}});
     res.status(200).send(JSON.stringify(monQCM));
 })

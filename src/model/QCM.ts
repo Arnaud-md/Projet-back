@@ -2,6 +2,10 @@ import { DataTypes, Sequelize} from "sequelize";
 //export const QCM = sequelize.define('QCM_content', {
 export const QCMModel = (sequelize: Sequelize) => {
     return sequelize.define('QCM_contents', {
+    subject: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     numQuestion: {
         type: DataTypes.INTEGER,
         allowNull: false
