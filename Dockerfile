@@ -4,5 +4,6 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install
 COPY . .
-EXPOSE 1337
-CMD [ "npm", "run", "dev" ]
+EXPOSE 3030
+RUN npx tsc
+CMD node dist/index.js
