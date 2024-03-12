@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { TokenBlackList, User } from "..";
+import { TokenBlackList, Users } from "..";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { DecodeToken, checkToken } from "../middlewares/checkToken";
@@ -16,7 +16,7 @@ authRouter.post("/local/register", async(req, res) => {
     const mention = req.body.mention;
     const etudes = req.body.etudes;
 
-    const userEmail = await User.findOne({ where: {email:email}});
+    const userEmail = await Users.findOne({ where: {email:email}});
     console.log("userEmail : ",userEmail);
     if (userEmail===null) {
       const password = req.body.password;
@@ -24,7 +24,7 @@ authRouter.post("/local/register", async(req, res) => {
       const saltRounds = 10;
       const hash = await bcrypt.hash(password, saltRounds);
       const monUser = { nom,prenom,email,ismasculin,filiere,mention,etudes, password:hash };
-      const newUser = await User.create(monUser);
+      const newUser = await Users.create(monUser);
       const newUserData = newUser.dataValues
       delete newUserData.password
       //res.status(200).json(newUserData);
@@ -41,7 +41,7 @@ authRouter.post("/local/register", async(req, res) => {
 })
 authRouter.post("/local/logout", checkToken, async (req, res) => {
     const decoded = jwt.decode(req.token!) as DecodeToken
-    const user = await User.findOne({ where: { id: decoded.id } });
+    const user = await Users.findOne({ where: { id: decoded.id } });
     if (user) {
         await TokenBlackList.create({ token: req.token });
         res.send("Logged out");
@@ -53,7 +53,7 @@ authRouter.post("/local/logout", checkToken, async (req, res) => {
 authRouter.post("/local", async(req, res) => {
     const email = req.body.email;
     const password = req.body.password;
-    const userEmail = await User.findOne({ where: {email:email}});
+    const userEmail = await Users.findOne({ where: {email:email}});
     if (userEmail!==null) {
       const userEmailData = userEmail.dataValues;
       const match = await bcrypt.compare(password, userEmailData.password);

@@ -4,7 +4,8 @@ export const ReponseModel = (sequelize: Sequelize) => {
     return sequelize.define('Reponse', {
     resp_id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        primaryKey: true,
+        autoIncrement: true
     },
     user_id: {
         type: DataTypes.INTEGER,
@@ -22,7 +23,5 @@ export const ReponseModel = (sequelize: Sequelize) => {
         type: DataTypes.STRING,
         allowNull: false
     }
-},{
-        timestamps: false,
 });
 }

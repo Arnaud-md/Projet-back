@@ -4,7 +4,8 @@ export const QuizzModel = (sequelize: Sequelize) => {
     return sequelize.define('Quizz', {
     id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        primaryKey: true,
+        autoIncrement: true
     },
     idq1: {
         type: DataTypes.INTEGER,
@@ -51,10 +52,8 @@ export const QuizzModel = (sequelize: Sequelize) => {
         allowNull: false
     },
     pourcentage_reussite: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false
     }
-},{
-        timestamps: false,
 });
 }

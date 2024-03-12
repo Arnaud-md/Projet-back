@@ -1,17 +1,17 @@
 import { Router } from "express";
 import jwt from "jsonwebtoken";
 import { DecodeToken, checkToken } from "../middlewares/checkToken";
-import { User } from "..";
+import { Users } from "..";
 export const userRouter = Router();
 
 
 userRouter.get("/", async(req, res) => {
-    const allUsers = await User.findAll();
+    const allUsers = await Users.findAll();
     res.status(200).send(JSON.stringify(allUsers));
 })
 userRouter.get("/me", checkToken, async (req, res) => {
     const decoded = jwt.decode(req.token!) as DecodeToken
-    const user = await User.findOne({ where: { id: decoded.id } });
+    const user = await Users.findOne({ where: { id: decoded.id } });
     if (user) {
         delete user.dataValues.password;
         res.json(user);
@@ -32,7 +32,7 @@ userRouter.post("/", async(req, res) => {
     if (nom!==null) {
       const monResultat = {nom, prenom , email, ismasculin, filiere, mention, etudes, password }
       console.log("monResultat : ", monResultat);
-      await User.create(monResultat);
+      await Users.create(monResultat);
       res.status(200).json(monResultat);
     }
 })

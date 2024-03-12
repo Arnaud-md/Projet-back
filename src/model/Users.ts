@@ -8,7 +8,8 @@ export const UsersModel = (sequelize: Sequelize) => {
     // },
     id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        primaryKey: true,
+        autoIncrement: true
     },
     nom: {
         type: DataTypes.STRING,
@@ -42,7 +43,5 @@ export const UsersModel = (sequelize: Sequelize) => {
         type: DataTypes.STRING,
         allowNull: false
     },
-},{
-        timestamps: false,
 });
 }

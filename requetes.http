@@ -1,6 +1,9 @@
 GET http://localhost:8887/api/qcm/informatique
 content-type: application/json
 ###
+GET http://localhost:8887/api/qcm
+content-type: application/json
+###
 GET http://localhost:8887/api/qcm/informatique/19
 content-type: application/json
 ###
@@ -166,720 +169,706 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxN
 POST http://localhost:1337/api/auth/local/logout
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZm9vYmFyIiwiaWF0IjoxNzAyMDUwNjU2LCJleHAiOjE3MDIwNTQyNTZ9.JIs7iDTcxFEdH1farW5e5tLsrjEFRom3p-enfGhXolo
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 1,
+        "id": 1,
         "question": "Qu'est-ce que le HTML ?",
         "reponseA": "Home Tool for Managing Links",
         "reponseB": "High-Level Text Markup Language",
         "reponseC": "HyperText Markup Language",
         "reponseD": "Hyperlink and Text Markup Language",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 2,
+        "id": 2,
         "question": "Quelle est la fonction principale d'un système d'exploitation ?",
         "reponseA": "Contrôler les performances de l'ordinateur",
         "reponseB": "Gérer la connexion Internet",
         "reponseC": "Gérer les ressources matérielles et fournir des services aux programmes",
         "reponseD": "Gérer les logiciels installés sur l'ordinateur",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 3,
+        "id": 3,
         "question": "Qu'est-ce qu'un algorithme ?",
         "reponseA": "Une série d'instructions pour accomplir une tâche donnée",
         "reponseB": "Un langage de programmation",
         "reponseC": "Un type de logiciel",
         "reponseD": "Un périphérique de stockage de données",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 4,
+        "id": 4,
         "question": "Quelle est la différence entre RAM et ROM ?",
         "reponseA": "La RAM est volatile et la ROM est non volatile",
         "reponseB": "La RAM est une unité de mesure de la vitesse du processeur et la ROM est une unité de mesure de la capacité de stockage",
         "reponseC": "Il n'y a pas de différence significative",
         "reponseD": "La RAM est utilisée pour le stockage permanent et la ROM pour le stockage temporaire",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 5,
+        "id": 5,
         "question": "Quelle est la fonction de base de SQL (Structured Query Language) ?",
         "reponseA": "Éditer des vidéos",
         "reponseB": "Interagir avec des bases de données",
         "reponseC": "Créer des graphiques",
         "reponseD": "Gérer les fichiers multimédias",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 6,
+        "id": 6,
         "question": "Quel langage de programmation est souvent utilisé pour le développement web côté serveur ?",
         "reponseA": "Java",
         "reponseB": "Python",
         "reponseC": "PHP",
         "reponseD": "JavaScript",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 7,
+        "id": 7,
         "question": "Quelle est l'utilité d'une boucle dans la programmation ?",
         "reponseA": "Répéter une série d'instructions",
         "reponseB": "Créer une interface utilisateur",
         "reponseC": "Choisir entre deux options",
         "reponseD": "Interrompre l'exécution du programme",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 8,
+        "id": 8,
         "question": "Qu'est-ce que l'adresse IP (Internet Protocol)",
         "reponseA": "Un identifiant unique attribué à chaque périphérique sur un réseau",
         "reponseB": "Un type de routeur sans fil",
         "reponseC": "Un protocole de compression de fichiers",
         "reponseD": "Un code de programmation pour les jeux en ligne",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 9,
+        "id": 9,
         "question": "Quel est le but principal d'un pare-feu (firewall)",
         "reponseA": "Bloquer l'accès non autorisé à un réseau",
         "reponseB": "Améliorer la qualité audio d'un système",
         "reponseC": "Améliorer la vitesse de connexion Internet",
         "reponseD": "Contrôler l'éclairage d'un bâtiment",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-PUT http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 9,
-        "question": "Quel est le but principal d'un pare-feu (firewall)",
-        "reponseA": "Bloquer l'accès non autorisé à un réseau",
-        "reponseB": "Améliorer la qualité audio d'un système",
-        "reponseC": "Améliorer la vitesse de connexion Internet",
-        "reponseD": "Contrôler l'éclairage d'un bâtiment",
-        "valide": 1
-}
-###
-POST http://localhost:8887/api/qcm/informatique
-content-type: application/json
-
-{
-        "subject": "informatique",
-        "numQuestion": 10,
+        "id": 10,
         "question": "Qu'est-ce qu'un fichier au format PDF ?",
         "reponseA": "Portable Document Format",
         "reponseB": "Personal Data",
         "reponseC": "Printed Document File",
         "reponseD": "Programmable Document File",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 11,
+        "id": 11,
         "question": "Qu'est-ce qu'un algorithme?",
         "reponseA": "Une unité de stockage",
         "reponseB": "Un langage de programmation",
         "reponseC": "Une série d'instructions pour résoudre un problème",
         "reponseD": "Un ordinateur puissant",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 12,
+        "id": 12,
         "question": "Quel est le langage de programmation utilisé pour développer des applications Android?",
         "reponseA": "C#",
         "reponseB": "Java",
         "reponseC": "Python",
         "reponseD": "Ruby",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 13,
+        "id": 13,
         "question": "Quelle est la base du système binaire?",
         "reponseA": "10",
         "reponseB": "2",
         "reponseC": "16",
         "reponseD": "8",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 14,
+        "id": 14,
         "question": "Que signifie l'acronyme HTML en informatique?",
         "reponseA": "Hyper Text Markup Language",
         "reponseB": "High Technology Modern Language",
         "reponseC": "Human Test Machine Learning",
         "reponseD": "Hyper Transfer Model Language",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 15,
+        "id": 15,
         "question": "Quel est le principal objectif du langage de programmation Python?",
         "reponseA": "Développer des sites web interactifs",
         "reponseB": "Automatiser des tâches et résoudre des problèmes",
         "reponseC": "Créer des applications mobiles",
         "reponseD": "Concevoir des jeux vidéo",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 16,
+        "id": 16,
         "question": "Quelle est la fonction principale d'un système d'exploitation?",
         "reponseA": "Imprimer des fichiers",
         "reponseB": "Contrôler le matériel de l'ordinateur",
         "reponseC": "Créer des documents",
         "reponseD": "Stocker des données",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 17,
+        "categorie": "informatique",
+        "id": 17,
         "question": "Quel est le symbole utilisé pour les commentaires en Python?",
         "reponseA": "/* */",
         "reponseB": "#",
         "reponseC": "//",
         "reponseD": "--",
-        "valide": 2
+        "bonne_reponse": 2
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 18,
+        "id": 18,
         "question": "Quelle est l'unité de mesure de la vitesse d'un processeur?",
         "reponseA": "Hertz",
         "reponseB": "Kilobit",
         "reponseC": "Byte",
         "reponseD": "Watt",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 19,
+        "id": 19,
         "question": "Quel type de boucle permet de répéter un bloc de code tant qu'une condition est vraie en Python?",
         "reponseA": "Boucle for",
         "reponseB": "Boucle while",
         "reponseC": "Boucle do-while",
         "reponseD": "Boucle if",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 20,
+        "id": 20,
         "question": "Que signifie l'acronyme URL en informatique?",
         "reponseA": "Unique Relative Link",
         "reponseB": "Unified Response Line",
         "reponseC": "Universal Resource Locator",
         "reponseD": "Uniform Request Language",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 21,
+        "id": 21,
         "question": "Quelle est la signification de l'acronyme RAM?",
         "reponseA": "Remote Access Module",
         "reponseB": "Random Access Memory",
         "reponseC": "Rapid Application Management",
         "reponseD": "Read-Only Memory",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 22,
+        "id": 22,
         "question": "Quel langage de programmation est principalement utilisé pour le développement de pages web interactives?",
         "reponseA": "Ruby",
         "reponseB": "Java",
         "reponseC": "JavaScript",
         "reponseD": "C++",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 23,
+        "id": 23,
         "question": "Quelle est la fonction du système d'exploitation Windows?",
         "reponseA": "Gérer les fichiers et ressources matérielles de l'ordinateur",
         "reponseB": "Naviguer sur Internet",
         "reponseC": "Créer des présentations",
         "reponseD": "Contrôler la température de l'ordinateur",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 24,
+        "id": 24,
         "question": "Quel est le rôle du pare-feu (firewall) en informatique?",
         "reponseA": "Protéger l'ordinateur contre les virus",
         "reponseB": "Améliorer la vitesse de connexion Internet",
         "reponseC": "Bloquer les publicités sur Internet",
         "reponseD": "Contrôler l'accès réseau et protéger contre les menaces",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 25,
+        "id": 25,
         "question": "Quel langage de programmation est associé à la création de bases de données?",
         "reponseA": "Java",
         "reponseB": "SQL",
         "reponseC": "Ruby",
         "reponseD": "Python",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 26,
+        "id": 26,
         "question": "Quelle est la différence entre un logiciel open source et un logiciel propriétaire?",
         "reponseA": "Les logiciels open source sont développés par des entreprises, tandis que les logiciels propriétaires sont développés par des individus",
         "reponseB": "Il n'y a pas de différence significative",
         "reponseC": "Les logiciels open source sont distribués avec leur code source, tandis que les logiciels propriétaires ne le sont pas",
         "reponseD": "Les logiciels open source sont gratuits, tandis que les logiciels propriétaires sont payants",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 27,
+        "id": 27,
         "question": "Quel langage de programmation est souvent utilisé pour le développement de jeux vidéo?",
         "reponseA": "PHP",
         "reponseB": "COBOL",
         "reponseC": "C#",
         "reponseD": "Fortran",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 28,
+        "id": 28,
         "question": "Qu'est-ce qu'un fichier avec l'extension .jpg?",
         "reponseA": "Un fichier image",
         "reponseB": "Un fichier texte",
         "reponseC": "Un fichier audio",
         "reponseD": "Un fichier texte",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 29,
+        "id": 29,
         "question": "Quel est le protocole de transfert de courrier électronique standard sur Internet?",
         "reponseA": "TCP/IP",
         "reponseB": "FTP",
         "reponseC": "SMTP",
         "reponseD": "HTTP",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "informatique"
 }
 ###
-POST http://localhost:8887/api/qcm/informatique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "informatique",
-        "numQuestion": 30,
+        "id": 30,
         "question": "Quelle est la fonction principale de la mémoire cache d'un processeur?",
         "reponseA": "Exécuter des logiciels",
         "reponseB": "Accélérer l'accès aux données fréquemment utilisées",
         "reponseC": "Stocker de grandes quantités de données",
         "reponseD": "Contrôler les ventilateurs du processeur",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "informatique"
 }
 
 ###
 DELETE http://localhost:8887/api/qcm/informatique
 content-type: application/json
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 1,
+        "id": 31,
         "question": "Qu'est-ce que le principe de conservation de l'énergie ?",
         "reponseA": "L'énergie augmente constamment dans un système isolé.",
         "reponseB": "L'énergie est stockée dans les batteries",
         "reponseC": "L'énergie diminue constamment dans un système isolé",
         "reponseD": "L'énergie ne peut ni être créée ni détruite, seulement transformée.",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 2,
+        "id": 32,
         "question": "Comment appelle-t-on la tendance d'un objet à rester en mouvement ou au repos à moins d'être influencé par une force externe ?",
         "reponseA": "Accélération",
         "reponseB": "Élastique",
         "reponseC": "Force gravitationnelle",
         "reponseD": "Inertie",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 3,
+        "id": 33,
         "question": "Quelle loi énonce que pour chaque action, il y a une réaction égale et opposée ?",
         "reponseA": "La loi de Pascal",
         "reponseB": "La loi de Newton",
         "reponseC": "La loi de Boyle-Mariotte",
         "reponseD": "La loi de Coulomb",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 4,
+        "id": 34,
         "question": "Quelle quantité mesure la rapidité avec laquelle un objet tourne autour d'un axe ?",
         "reponseA": "Accélération",
         "reponseB": "Force centrifuge",
         "reponseC": "Vitesse",
         "reponseD": "Moment cinétique",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 5,
+        "id": 35,
         "question": "Qu'est-ce qu'un vecteur dans le contexte de la mécanique ?",
         "reponseA": "Une grandeur négative",
         "reponseB": "Une grandeur n'ayant pas de direction",
         "reponseC": "Une grandeur ayant une magnitude et une direction",
         "reponseD": "Une grandeur ayant seulement une magnitude",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 6,
+        "id": 36,
         "question": "Quel principe de base de la thermodynamique énonce que l'énergie totale dans un système isolé reste constante ?",
         "reponseA": "Le principe de Carnot",
         "reponseB": "La première loi de la thermodynamique",
         "reponseC": "La troisième loi de la thermodynamique",
         "reponseD": "La deuxième loi de la thermodynamique",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 7,
+        "id": 37,
         "question": "Qu'est-ce que la résistance d'un matériau ?",
         "reponseA": "La tendance d'un matériau à briser sous une charge",
         "reponseB": "La tendance d'un matériau à conduire l'électricité",
         "reponseC": "La tendance d'un matériau à absorber la chaleur",
         "reponseD": "La tendance d'un matériau à se déformer sous une contrainte",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 8,
+        "id": 38,
         "question": "Quel est le nom de la première loi de Newton qui énonce qu'un objet en mouvement restera en mouvement, et un objet au repos restera au repos, à moins qu'une force agisse sur lui ?",
         "reponseA": "La loi de l'inertie",
         "reponseB": "La loi de la conservation de l'énergie",
         "reponseC": "La loi de l'action et de la réaction",
         "reponseD": "La loi de la gravitation universelle",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 9,
+        "id": 39,
         "question": "Qu'est-ce que la première loi du mouvement de Newton ?",
         "reponseA": "La force est égale à la masse multipliée par l'accélération.",
         "reponseB": "Aucune des réponses ci-dessus.",
         "reponseC": "Pour chaque action, il y a une réaction égale et opposée.",
         "reponseD": "Un objet en mouvement reste en mouvement et un objet au repos reste au repos, à moins qu'une force nette agisse sur lui.",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 10,
+        "id": 40,
         "question": "Quelle unité de mesure est utilisée pour exprimer une force en physique ?",
         "reponseA": "Newton",
         "reponseB": "Volt",
         "reponseC": "Watt",
         "reponseD": "Joule",
-        "valide": 1
+        "bonne_reponse": 1,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 11,
+        "id": 41,
         "question": "Qu'est-ce que le principe de conservation de l'énergie ?",
         "reponseA": "L'énergie cinétique d'un objet en mouvement est constante.",
         "reponseB": "L'énergie ne peut pas être créée ni détruite, seulement transformée.",
         "reponseC": "L'énergie potentielle d'un objet en hauteur est constante.",
         "reponseD": "L'énergie totale d'un système isolé reste constante.",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 12,
+        "id": 42,
         "question": "Quelle loi décrit le comportement des gaz idéaux à des températures et pressions normales ?",
         "reponseA": "La loi de Dalton",
         "reponseB": "La loi des gaz parfaits",
         "reponseC": "La loi de Boyle-Mariotte",
         "reponseD": "La loi de Charles",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 13,
+        "id": 43,
         "question": "Quelle loi de Newton décrit le mouvement d'un objet sous l'influence d'une force constante ?",
         "reponseA": "La troisième loi de Newton",
         "reponseB": "La deuxième loi de Newton",
         "reponseC": "La première loi de Newton",
         "reponseD": "La quatrième loi de Newton",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 14,
+        "id": 44,
         "question": "Quelle quantité est conservée lorsque la somme des forces externes agissant sur un système est nulle ?",
         "reponseA": "Moment cinétique",
         "reponseB": "Impulsion",
         "reponseC": "Quantité de mouvement",
         "reponseD": "Énergie mécanique",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 15,
+        "id": 45,
         "question": "Quel terme décrit la tendance d'un objet à rester au repos ou en mouvement rectiligne uniforme à moins qu'une force nette n'agisse sur lui ?",
         "reponseA": "Élasticité",
         "reponseB": "Cohérence",
         "reponseC": "Résistance",
         "reponseD": "Inertie",
-        "valide": 4
+        "bonne_reponse": 4,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 16,
+        "id": 46,
         "question": "Comment appelle-t-on le point où toute la masse d'un objet semble être concentrée lorsqu'on traite l'objet comme un point matériel en mécanique ?",
         "reponseA": "Centre d'inertie",
         "reponseB": "Centre de rotation",
         "reponseC": "Centre de gravité",
         "reponseD": "Centre de masse",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 17,
+        "id": 47,
         "question": "Quelle est la formule de la deuxième loi de Newton ?",
         "reponseA": "E = mc²",
         "reponseB": "F = ma",
         "reponseC": "F = GMm/r²",
         "reponseD": "P = mgh",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 18,
+        "id": 48,
         "question": "Qu'est-ce que le moment d'inertie d'un objet ?",
         "reponseA": "La force nécessaire pour déplacer un objet",
         "reponseB": "La mesure de la distribution de la masse par rapport à un axe de rotation",
         "reponseC": "La résistance d'un objet à changer son état de mouvement",
         "reponseD": "La quantité de mouvement d'un objet",
-        "valide": 2
+        "bonne_reponse": 2,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 19,
+        "id": 49,
         "question": "Quelle est l'unité de mesure de la puissance ?",
         "reponseA": "Volt (V)",
         "reponseB": "Joule (J)",
         "reponseC": "Watt (W)",
         "reponseD": "Newton (N)",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm/mecanique
+POST http://localhost:8887/api/qcm
 content-type: application/json
 
 {
-        "subject": "mecanique",
-        "numQuestion": 20,
+        "id": 50,
         "question": "Selon la troisième loi de Newton, comment se rapportent les actions et réactions entre deux objets en interaction ?",
         "reponseA": "Elles ont des magnitudes différentes et des directions identiques.",
         "reponseB": "Elles ont des magnitudes différentes mais des directions opposées.",
         "reponseC": "Elles ont des magnitudes et des directions identiques.",
         "reponseD": "Elles ont des magnitudes et des directions opposées.",
-        "valide": 3
+        "bonne_reponse": 3,
+        "categorie": "mecanique"
 }

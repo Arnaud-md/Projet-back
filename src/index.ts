@@ -8,13 +8,19 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import { TokenBlackListModel } from "./model/TokenBlackList";
 import { DecodeToken, checkToken } from "./middlewares/checkToken";
-import { UserModel } from "./model/User";
+//import { UserModel } from "./model/User";
 import { userRouter } from "./router/users";
-import { qcminfoRouter } from "./router/qcminfo";
+//import { qcminfoRouter } from "./router/qcm";
 import { authRouter } from "./router/auth";
-import { QCMModel } from "./model/QCM";
-import { resultRouter } from "./router/results";
-import { ResultModel } from "./model/Result";
+//import { QCMModel } from "./model/QCM";
+//import { resultRouter } from "./router/results";
+//import { ResultModel } from "./model/Result";
+import { QuestionModel } from "./model/Question";
+import { QuizzModel } from "./model/Quizz";
+import { questionRouter } from "./router/qcm";
+import { quizzRouter } from "./router/quizz";
+import { UsersModel } from "./model/Users";
+import { ReponseModel } from "./model/Reponse";
 
 export const sequelize = new Sequelize({
   dialect: 'sqlite',
@@ -42,11 +48,15 @@ const middleware = (req:any, res:any, next:any) => {
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-export const User = UserModel(sequelize);
-export const QCM = QCMModel(sequelize);
-export const Result = ResultModel(sequelize);
+//export const User = UserModel(sequelize);
+//export const QCM = QCMModel(sequelize);
+//export const Result = ResultModel(sequelize);
+export const Question = QuestionModel(sequelize);
+export const Quizz = QuizzModel(sequelize);
+export const Users = UsersModel(sequelize);
 export const TokenBlackList = TokenBlackListModel(sequelize);
-sequelize.sync();
+export const Reponse = ReponseModel(sequelize);
+sequelize.sync({force: true});
 
 const port = process.env.PORT ? parseInt(process.env.PORT as string) : 3030
 
@@ -57,10 +67,19 @@ interface IMaRequetBody {
     note: IntegerDataType
   }
   const apiRouter = express.Router();
-  apiRouter.use('/qcm/informatique', qcminfoRouter);
+  //apiRouter.use('/qcm/informatique', qcminfoRouter);
+  const qcmRouter = express.Router();
+  qcmRouter.use('/informatique', questionRouter);
+  qcmRouter.use('/mecanique', questionRouter);
+  qcmRouter.use('/mecanique-des-fluides', questionRouter);
+  qcmRouter.use('/thermodynamique', questionRouter);
+  qcmRouter.use('/physique-des-plasmas', questionRouter);
+  qcmRouter.use('/electronique', questionRouter);
+  apiRouter.use('/qcm', qcmRouter);
+  apiRouter.use('/quizz', quizzRouter);
   apiRouter.use('/auth', authRouter);
   apiRouter.use('/users', userRouter);
-  apiRouter.use('/results', resultRouter);
+  //apiRouter.use('/results', resultRouter);
 
   app.use("/api", apiRouter);
   // app.post("/api/qcm/informatique", (req, res) => {

@@ -4,6 +4,11 @@ export const QuestionModel = (sequelize: Sequelize) => {
     return sequelize.define('Question', {
     id: {
         type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    question: {
+        type: DataTypes.STRING,
         allowNull: false
     },
     reponseA: {
@@ -30,7 +35,5 @@ export const QuestionModel = (sequelize: Sequelize) => {
         type: DataTypes.STRING,
         allowNull: false
     }
-},{
-        timestamps: false,
 });
 }
