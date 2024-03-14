@@ -1,7 +1,17 @@
-import { DataTypes, Sequelize} from "sequelize";
+import { CreationOptional, DataTypes, InferAttributes, InferCreationAttributes, Model, Sequelize} from "sequelize";
+
+interface IReponseModel extends Model<InferAttributes<IReponseModel>, InferCreationAttributes<IReponseModel>> {
+    // Some fields are optional when calling UserModel.create() or UserModel.build()
+    resp_id: CreationOptional<number>;
+    user_id: number;
+    quizz_id: number;
+    question_id: number;
+    reponse_donnee: number;
+  }
+  
 
 export const ReponseModel = (sequelize: Sequelize) => {
-    return sequelize.define('Reponse', {
+    return sequelize.define<IReponseModel>('Reponse', {
     resp_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,

@@ -1,7 +1,17 @@
-import { DataTypes, Sequelize} from "sequelize";
-//export const QCM = sequelize.define('QCM_content', {
+import { CreationOptional, DataTypes, InferAttributes, InferCreationAttributes, Model, Sequelize} from "sequelize";
+interface IQuestionModel extends Model<InferAttributes<IQuestionModel>, InferCreationAttributes<IQuestionModel>> {
+    // Some fields are optional when calling UserModel.create() or UserModel.build()
+    id: CreationOptional<number>;
+    question: string;
+    reponseA: string;
+    reponseB: string;
+    reponseC: string;
+    reponseD: string;
+    bonne_reponse: number;
+    categorie: string;
+  }
 export const QuestionModel = (sequelize: Sequelize) => {
-    return sequelize.define('Question', {
+    return sequelize.define<IQuestionModel>('Question', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
