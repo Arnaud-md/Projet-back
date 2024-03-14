@@ -9,7 +9,7 @@ export const ReponseModel = (sequelize: Sequelize) => {
     },
     user_id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     quizz_id: {
         type: DataTypes.INTEGER,
@@ -20,7 +20,7 @@ export const ReponseModel = (sequelize: Sequelize) => {
         allowNull: false
     },
     reponse_donnee: {
-        type: DataTypes.STRING,
+        type: DataTypes.NUMBER,
         allowNull: false
     }
 });

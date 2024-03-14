@@ -56,7 +56,8 @@ export const Quizz = QuizzModel(sequelize);
 export const Users = UsersModel(sequelize);
 export const TokenBlackList = TokenBlackListModel(sequelize);
 export const Reponse = ReponseModel(sequelize);
-sequelize.sync({force: true});
+//sequelize.sync({force: true});
+sequelize.sync();
 
 const port = process.env.PORT ? parseInt(process.env.PORT as string) : 3030
 
