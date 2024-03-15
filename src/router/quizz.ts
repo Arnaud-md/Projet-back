@@ -150,11 +150,11 @@ quizzRouter.post("/:idQuizz/reponse/:indexReponse", async (req, res) => {
 
 quizzRouter.get("/:idQuizz/result", async(req, res) => {
     let score = 0;
-    const nbResponseForQuizz = await Reponse.count({
-        where: {
-            quizz_id: req.params.idQuizz
-        }
-    })
+    // const nbResponseForQuizz = await Reponse.count({
+    //     where: {
+    //         quizz_id: req.params.idQuizz
+    //     }
+    // })
     const allReponses = await Reponse.findAll({
         where: {
             quizz_id: req.params.idQuizz
