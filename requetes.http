@@ -1,7 +1,7 @@
 GET http://localhost:8887/api/qcm/informatique
 content-type: application/json
 ###
-GET http://localhost:8887/api/qcm
+GET http://localhost:8887/api/qcm/mecanique-des-fluides
 content-type: application/json
 ###
 GET http://localhost:8887/api/qcm/informatique/19
@@ -593,7 +593,7 @@ content-type: application/json
 DELETE http://localhost:8887/api/qcm/informatique
 content-type: application/json
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -607,7 +607,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -621,7 +621,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -635,7 +635,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -649,7 +649,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -663,7 +663,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -677,7 +677,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -691,7 +691,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -705,7 +705,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -719,7 +719,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -733,7 +733,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -747,7 +747,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -761,7 +761,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -775,7 +775,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -789,7 +789,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -803,7 +803,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -817,7 +817,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -831,7 +831,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -845,7 +845,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -859,7 +859,7 @@ content-type: application/json
         "categorie": "mecanique"
 }
 ###
-POST http://localhost:8887/api/qcm
+POST http://localhost:8887/api/qcm/mecanique
 content-type: application/json
 
 {
@@ -871,4 +871,284 @@ content-type: application/json
         "reponseD": "Elles ont des magnitudes et des directions opposées.",
         "bonne_reponse": 3,
         "categorie": "mecanique"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 51,
+        "question": "Qu'est-ce qu'un fluide newtonien ?",
+        "reponseA": "Un fluide dont la viscosité dépend de la contrainte appliquée",
+        "reponseB": "Un fluide qui ne coule pas",
+        "reponseC": "Un fluide dont la viscosité dépend du temps",
+        "reponseD": "Un fluide qui ne suit pas les lois de la mécanique des fluides",
+        "bonne_reponse": 1,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 52,
+        "question": "Quelle équation représente la loi de conservation de la masse pour un écoulement incompressible ?",
+        "reponseA": "∇·ρ = 0",
+        "reponseB": "∇·(ρV) = 0",
+        "reponseC": "∇·V = 0",
+        "reponseD": "∇·(ρV) = ∂ρ/∂t",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 53,
+        "question": "Quelle loi de la mécanique des fluides énonce que la pression d'un fluide diminue lorsque sa vitesse augmente ?",
+        "reponseA": "Loi de Pascal",
+        "reponseB": "Loi d'Archimède",
+        "reponseC": "Loi de Bernoulli",
+        "reponseD": "Loi de Boyle",
+        "bonne_reponse": 3,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 54,
+        "question": "Quelle est l'unité SI de la viscosité dynamique ?",
+        "reponseA": "Pascal seconde (Pa·s)",
+        "reponseB": "Poise (P)",
+        "reponseC": "Newton par mètre carré (N/m²)",
+        "reponseD": "Pascal par seconde (Pa/s)",
+        "bonne_reponse": 1,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 55,
+        "question": "Qu'est-ce que le nombre de Reynolds (Re) représente dans un écoulement de fluide ?",
+        "reponseA": "Le rapport de la densité sur la viscosité cinématique",
+        "reponseB": "Le rapport de la viscosité dynamique sur la viscosité cinématique",
+        "reponseC": "Le rapport de la force gravitationnelle sur la force centripète",
+        "reponseD": "Le rapport de l'inertie sur la viscosité",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 56,
+        "question": "Quelle équation décrit la relation entre la pression, la densité, la gravité et la hauteur d'un fluide incompressible en équilibre ?",
+        "reponseA": "P = mgh",
+        "reponseB": "P = ρgh",
+        "reponseC": "P = mgV",
+        "reponseD": "P = ρgV",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 57,
+        "question": "Qu'est-ce que l'effet Venturi ?",
+        "reponseA": "Un phénomène lié à la surface libre d'un fluide",
+        "reponseB": "Une diminution de la pression dans une conduite rétrécie",
+        "reponseC": "Un effet observé dans les écoulements turbulents",
+        "reponseD": "Une augmentation de la pression dans une conduite rétrécie",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 58,
+        "question": "Qu'est-ce qu'un écoulement laminaire ?",
+        "reponseA": "Un écoulement régulier et ordonné",
+        "reponseB": "Un écoulement caractérisé par des tourbillons",
+        "reponseC": "Un écoulement turbulent et chaotique",
+        "reponseD": "Un écoulement en rotation autour d'un axe central",
+        "bonne_reponse": 1,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 59,
+        "question": "Quelle équation représente la loi de conservation de l'énergie pour un fluide incompressible en écoulement le long d'une conduite ?",
+        "reponseA": "Équation de Navier-Stokes",
+        "reponseB": "Équation de Bernoulli",
+        "reponseC": "Équation de conservation de la masse",
+        "reponseD": "Équation de Laplace",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 60,
+        "question": "Qu'est-ce qu'un écoulement stationnaire ?",
+        "reponseA": "Un écoulement à haute vitesse",
+        "reponseB": "Un écoulement turbulant",
+        "reponseC": "Un écoulement dont les propriétés ne changent pas avec le temps",
+        "reponseD": "Un écoulement dont la vitesse varie avec le temps",
+        "bonne_reponse": 3,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 61,
+        "question": "Qu'est-ce que la viscosité d'un fluide mesure ?",
+        "reponseA": "Sa température",
+        "reponseB": "Sa résistance à l'écoulement",
+        "reponseC": "Sa pression",
+        "reponseD": "Sa densité",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 62,
+        "question": "Quelle est l'unité de mesure de la pression dans le système international ?",
+        "reponseA": "Atmosphère (atm)",
+        "reponseB": "Bar",
+        "reponseC": "Newton (N)",
+        "reponseD": "Pascal (Pa)",
+        "bonne_reponse": 4,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 63,
+        "question": "Quel est le principe qui explique la portance d'un avion en vol ?",
+        "reponseA": "Le principe de Bernoulli",
+        "reponseB": "Le principe de Pascal",
+        "reponseC": "Le principe de continuité",
+        "reponseD": "Le principe d'Archimède",
+        "bonne_reponse": 1,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 64,
+        "question": "Quelle est la relation entre la pression et la vitesse d'écoulement d'un fluide selon le théorème de Bernoulli ?",
+        "reponseA": "La pression et la vitesse augmentent ensemble",
+        "reponseB": "Lorsque la vitesse diminue, la pression diminue",
+        "reponseC": "La pression et la vitesse sont indépendantes l'une de l'autre",
+        "reponseD": "Lorsque la vitesse augmente, la pression diminue",
+        "bonne_reponse": 4,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 65,
+        "question": "Quelle est la différence entre un fluide incompressible et un fluide compressible ?",
+        "reponseA": "Un fluide incompressible a une viscosité élevée, tandis qu'un fluide compressible a une viscosité faible.",
+        "reponseB": "Il n'y a pas de différence significative.",
+        "reponseC": "Un fluide incompressible a une densité constante, tandis qu'un fluide compressible a une densité qui peut varier.",
+        "reponseD": "Un fluide incompressible ne peut pas être déformé, tandis qu'un fluide compressible peut l'être.",
+        "bonne_reponse": 3,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 66,
+        "question": "Comment est définie la viscosité cinématique d'un fluide ?",
+        "reponseA": "Comme la résistance à l'écoulement d'un fluide",
+        "reponseB": "Comme le rapport de la viscosité dynamique à la densité du fluide",
+        "reponseC": "Comme la capacité d'un fluide à se déformer",
+        "reponseD": "Comme la force de frottement entre les particules du fluide",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 67,
+        "question": "Quel est le principe qui explique pourquoi les bateaux flottent sur l'eau ?",
+        "reponseA": "Le principe de Bernoulli",
+        "reponseB": "Le principe de Pascal",
+        "reponseC": "Le principe de continuité",
+        "reponseD": "Le principe d'Archimède",
+        "bonne_reponse": 4,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 68,
+        "question": "Quel terme décrit le flux d'un fluide à travers une surface par unité de temps ?",
+        "reponseA": "Pression statique",
+        "reponseB": "Vitesse de circulation",
+        "reponseC": "Débit volumique",
+        "reponseD": "Force de cisaillement",
+        "bonne_reponse": 3,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 69,
+        "question": "Quelle loi de base régit le comportement des fluides idéaux (non visqueux) ?",
+        "reponseA": "Loi de Pascal",
+        "reponseB": "Loi de Boyle-Mariotte",
+        "reponseC": "Loi de Bernoulli",
+        "reponseD": "Loi de Newton",
+        "bonne_reponse": 4,
+        "categorie": "mecanique-des-fluides"
+}
+###
+POST http://localhost:8887/api/qcm/mecanique-des-fluides
+content-type: application/json
+
+{
+        "id": 70,
+        "question": "Comment s'appelle la propriété d'un fluide de s'écouler sans frottement visqueux interne ?",
+        "reponseA": "Viscosité",
+        "reponseB": "Écoulement parfait",
+        "reponseC": "Incompressibilité",
+        "reponseD": "Écoulement laminaire",
+        "bonne_reponse": 2,
+        "categorie": "mecanique-des-fluides"
 }

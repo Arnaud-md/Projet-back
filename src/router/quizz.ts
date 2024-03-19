@@ -205,3 +205,68 @@ quizzRouter.get("/:idQuizz/status", async(req, res) => {
     }
     res.status(200).send(status);
 })
+
+quizzRouter.get("/:idQuizz/result/correction", async(req, res) => {
+    let objCorrection = {};
+    // const nbResponseForQuizz = await Reponse.count({
+    //     where: {
+    //         quizz_id: req.params.idQuizz
+    //     }
+    // })
+    const allReponses = await Reponse.findAll({
+        where: {
+            quizz_id: req.params.idQuizz
+        }
+    })
+    console.log("allReponses : ",allReponses);
+    let cat = "";
+
+    const allQuestions = await Promise.all(
+        allReponses.map(reponse => 
+            Question.findOne({
+                where: {
+                    id: reponse.question_id
+                }
+            })
+        )
+    )
+    let reponse_donnee_def = [] as string[];
+    let question_bonne_reponse_def = [] as string[];
+    let question_def = [] as string[];
+    allReponses.forEach( (reponse, indexReponse) => {
+        const question = allQuestions[indexReponse]
+        console.log("question : ",question);
+        if(question) {
+            
+            if(reponse.reponse_donnee !== question.bonne_reponse) {
+                if(reponse.reponse_donnee===1) {
+                    reponse_donnee_def.push(question.reponseA);
+                }
+                if(reponse.reponse_donnee===2) {
+                    reponse_donnee_def.push(question.reponseB);
+                }
+                if(reponse.reponse_donnee===3) {
+                    reponse_donnee_def.push(question.reponseC);
+                }
+                if(reponse.reponse_donnee===4) {
+                    reponse_donnee_def.push(question.reponseD);
+                }
+                if(question.bonne_reponse===1) {
+                    question_bonne_reponse_def.push(question.reponseA);
+                }
+                if(question.bonne_reponse===2) {
+                    question_bonne_reponse_def.push(question.reponseB);
+                }
+                if(question.bonne_reponse===3) {
+                    question_bonne_reponse_def.push(question.reponseC);
+                }
+                if(question.bonne_reponse===4) {
+                    question_bonne_reponse_def.push(question.reponseD);
+                }
+                question_def.push(question.question);
+            }
+        }
+    })
+    const resultat = {"question_def" : question_def,"reponse_donnee_def" : reponse_donnee_def,"question_bonne_reponse_def" : question_bonne_reponse_def};
+    res.status(200).json(resultat);    
+})
