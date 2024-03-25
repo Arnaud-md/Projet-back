@@ -43,5 +43,77 @@ export const UsersModel = (sequelize: Sequelize) => {
         type: DataTypes.STRING,
         allowNull: false
     },
+    qidinfo1: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidinfo2: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidinfo3: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidmeca1: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidmeca2: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidmeca3: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidfluides1: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidfluides2: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidfluides3: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidthermo1: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidthermo2: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidthermo3: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidplasmas1: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidplasmas2: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidplasmas3: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidelec1: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidelec2: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    },
+    qidelec3: {
+        type:DataTypes.INTEGER,
+        allowNull: true
+    }
 });
 }

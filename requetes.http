@@ -1914,11 +1914,10 @@ content-type: application/json
         "categorie": "electronique"
 }
 ###
-POST http://localhost:8887/api/qcm/electronique
+PUT http://localhost:8887/api/qcm/electronique/128
 content-type: application/json
 
 {
-        "id": 128,
         "question": "Qu'est-ce qu'un microcontrôleur ?",
         "reponseA": "Un composant qui amplifie les signaux électriques",
         "reponseB": "Un composant qui stocke de l'énergie électrique",
@@ -1928,11 +1927,10 @@ content-type: application/json
         "categorie": "electronique"
 }
 ###
-POST http://localhost:8887/api/qcm/electronique
+PUT http://localhost:8887/api/qcm/electronique/129
 content-type: application/json
 
 {
-        "id": 129,
         "question": "Quelle est la fonction d'un relais électromagnétique ?",
         "reponseA": "Générer des signaux électriques",
         "reponseB": "Stocker et libérer de l'énergie électrique",
@@ -1942,11 +1940,10 @@ content-type: application/json
         "categorie": "electronique"
 }
 ###
-POST http://localhost:8887/api/qcm/electronique
+PUT http://localhost:8887/api/qcm/electronique/130
 content-type: application/json
 
 {
-        "id": 130,
         "question": "Quelle est la différence entre un condensateur électrolytique et un condensateur céramique ?",
         "reponseA": "Un condensateur électrolytique a une plus grande capacité, mais une polarité",
         "reponseB": "Un condensateur céramique a une plus grande capacité, mais une polarité",
