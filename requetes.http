@@ -1152,3 +1152,806 @@ content-type: application/json
         "bonne_reponse": 2,
         "categorie": "mecanique-des-fluides"
 }
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/71
+content-type: application/json
+
+{
+        "question": "Quelle est la première loi de la thermodynamique également connue sous le nom de loi de la conservation de l'énergie",
+        "reponseA": "L'énergie ne peut ni être créée ni détruite, seulement transformée.",
+        "reponseB": "L'entropie d'un système isolé ne peut que diminuer.",
+        "reponseC": "L'énergie totale dans un système isolé reste constante.",
+        "reponseD": "La chaleur ne peut être convertie en travail.",
+        "bonne_reponse": 1,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/72
+content-type: application/json
+
+{
+        "question": "Quelle est la définition de l'entropie dans le contexte de la thermodynamique ?",
+        "reponseA": "La mesure de la température d'un système.",
+        "reponseB": "La mesure du désordre ou de la dispersion d'énergie dans un système.",
+        "reponseC": "La mesure de l'énergie totale dans un système.",
+        "reponseD": "La mesure de la pression d'un gaz.",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/73
+content-type: application/json
+
+{
+        "question": "Que représente le cycle Carnot dans la thermodynamique ?",
+        "reponseA": "Un cycle dans lequel il n'y a pas de transfert de chaleur.",
+        "reponseB": "Un cycle utilisé pour la production d'électricité nucléaire",
+        "reponseC": "Le cycle thermodynamique réversible le plus efficace théoriquement possible.",
+        "reponseD": "Un cycle qui se produit uniquement dans les gaz nobles.",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/74
+content-type: application/json
+
+{
+        "question": "Quelle est la deuxième loi de la thermodynamique qui énonce que l'entropie d'un système isolé ne peut que croître avec le temps ?",
+        "reponseA": "La loi de Newton",
+        "reponseB": "La loi de Clausius",
+        "reponseC": "La loi de Kelvin-Planck",
+        "reponseD": "La loi de Joule",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/75
+content-type: application/json
+
+{
+        "question": "Quelle est la formule pour calculer l'efficacité d'un moteur thermique réversible de Carnot en fonction des températures ?",
+        "reponseA": "T2/T1",
+        "reponseB": "1 - (T1/T2)",
+        "reponseC": "1 - (T2/T1)",
+        "reponseD": "T1/T2",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/76
+content-type: application/json
+
+{
+        "question": "Que représente le zéro absolu sur l'échelle de température Kelvin ?",
+        "reponseA": "100°C",
+        "reponseB": "-273,15°C",
+        "reponseC": "273,15°C",
+        "reponseD": "0°C",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/77
+content-type: application/json
+
+{
+        "question": "Quelle est la définition de la chaleur latente ?",
+        "reponseA": "La chaleur nécessaire pour solidifier une substance.",
+        "reponseB": "La chaleur nécessaire pour changer l'état d'une substance sans changer sa température.",
+        "reponseC": "La chaleur nécessaire pour faire bouillir de l'eau.",
+        "reponseD": "La chaleur nécessaire pour augmenter la température d'une substance de 1 degré Celsius.",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/78
+content-type: application/json
+
+{
+        "question": "Quelle loi de la thermodynamique énonce que l'énergie totale dans un système isolé reste constante ?",
+        "reponseA": "La troisième loi de la thermodynamique",
+        "reponseB": "La deuxième loi de la thermodynamique",
+        "reponseC": "La première loi de la thermodynamique",
+        "reponseD": "La loi de Boyle-Mariotte",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/79
+content-type: application/json
+
+{
+        "question": "Quelle grandeur thermodynamique mesure le degré de désordre ou d'entropie d'un système ?",
+        "reponseA": "Entropie",
+        "reponseB": "Enthalpie",
+        "reponseC": "Énergie interne",
+        "reponseD": "Température",
+        "bonne_reponse": 1,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/80
+content-type: application/json
+
+{
+        "question": "Quelle est la définition de l'enthalpie d'un système ?",
+        "reponseA": "La capacité d'un système à effectuer un travail",
+        "reponseB": "La chaleur absorbée ou libérée lors d'une transformation à volume constant",
+        "reponseC": "L'énergie totale d'un système",
+        "reponseD": "La chaleur absorbée ou libérée lors d'une transformation à pression constante",
+        "bonne_reponse": 4,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/81
+content-type: application/json
+
+{
+        "question": "Quelle est la définition de la température absolue en kelvins (K) ?",
+        "reponseA": "La température mesurée en degrés Rankine",
+        "reponseB": "La température mesurée en degrés Celsius",
+        "reponseC": "La température en relation avec le zéro absolu",
+        "reponseD": "La température mesurée en degrés Fahrenheit",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/82
+content-type: application/json
+
+{
+        "question": "Quelle loi de la thermodynamique énonce qu'aucun processus thermodynamique ne peut être parfait à 100% ?",
+        "reponseA": "La loi de Boyle-Mariotte",
+        "reponseB": "La troisième loi de la thermodynamique",
+        "reponseC": "La deuxième loi de la thermodynamique",
+        "reponseD": "La première loi de la thermodynamique",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/83
+content-type: application/json
+
+{
+        "question": "Quel processus thermodynamique se produit sans transfert de chaleur et sans changement de l'énergie interne du système ?",
+        "reponseA": "Isobare",
+        "reponseB": "Isocore",
+        "reponseC": "Adiabatique",
+        "reponseD": "Isentropique",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/84
+content-type: application/json
+
+{
+        "question": "Quelle est la définition de l'efficacité d'un moteur thermique ?",
+        "reponseA": "Le rapport de l'énergie potentielle à l'énergie cinétique",
+        "reponseB": "Le rapport de la chaleur convertie en travail à la chaleur fournie",
+        "reponseC": "Le rapport de la température de sortie à la température d'entrée",
+        "reponseD": "Le rapport de la puissance fournie à la puissance absorbée",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/85
+content-type: application/json
+
+{
+        "question": "Quel est le nom du processus réversible au cours duquel un gaz se dilate tout en maintenant sa température constante ?",
+        "reponseA": "Isobare",
+        "reponseB": "Isocore",
+        "reponseC": "Isotherme",
+        "reponseD": "Adiabatique",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/86
+content-type: application/json
+
+{
+        "question": "Quel terme désigne la mesure de l'incapacité d'un système à effectuer un travail ?",
+        "reponseA": "Enthalpie",
+        "reponseB": "Énergie interne",
+        "reponseC": "Entropie libre",
+        "reponseD": "Entropie",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/87
+content-type: application/json
+
+{
+        "question": "Quel terme désigne la capacité d'un système à effectuer un travail maximal lors d'une transformation isotherme réversible ?",
+        "reponseA": "Travail irréversible",
+        "reponseB": "Travail utile",
+        "reponseC": "Travail total",
+        "reponseD": "Puissance",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/88
+content-type: application/json
+
+{
+        "question": "Quel processus thermodynamique se produit à pression constante ?",
+        "reponseA": "Isotherme",
+        "reponseB": "Isochore",
+        "reponseC": "Isobare",
+        "reponseD": "Isentropique",
+        "bonne_reponse": 3,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/89
+content-type: application/json
+
+{
+        "question": "Quelle énonciation correspond le mieux à la deuxième loi de la thermodynamique ?",
+        "reponseA": "L'entropie d'un système isolé ne peut que diminuer.",
+        "reponseB": "Aucun processus ne peut être plus efficace qu'une machine thermique réversible qui fonctionne entre deux réservoirs thermiques à températures constantes.",
+        "reponseC": "L'énergie totale de l'univers est constante.",
+        "reponseD": "Un gaz parfait obéit à la loi PV = nRT.",
+        "bonne_reponse": 2,
+        "categorie": "thermodynamique"
+}
+###
+PUT http://localhost:8887/api/qcm/thermodynamique/90
+content-type: application/json
+
+{
+        "question": "Quel processus thermodynamique se produit sans échange de chaleur avec l'environnement ?",
+        "reponseA": "Adiabatique",
+        "reponseB": "Isentropique",
+        "reponseC": "Isobare",
+        "reponseD": "Isotherme",
+        "bonne_reponse": 1,
+        "categorie": "thermodynamique"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 91,
+        "question": "Qu'est-ce qu'un plasma ?",
+        "reponseA": "Un liquide conducteur",
+        "reponseB": "Un solide cristallin",
+        "reponseC": "Un gaz ionisé",
+        "reponseD": "Un gaz inerte",
+        "bonne_reponse": 3,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 92,
+        "question": "Quelle est la quatrième état de la matière, après les solides, les liquides et les gaz ?",
+        "reponseA": "Fermionic Condensate",
+        "reponseB": "Plasma",
+        "reponseC": "Bose-Einstein",
+        "reponseD": "Quark-gluon Plasma",
+        "bonne_reponse": 2,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 93,
+        "question": "Quel phénomène se produit lorsqu'un électron est arraché à un atome dans un plasma ?",
+        "reponseA": "Désintégration",
+        "reponseB": "Fusion",
+        "reponseC": "Ionisation",
+        "reponseD": "Excitation",
+        "bonne_reponse": 3,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 94,
+        "question": "Quelle est la température typique d'un plasma dans les réacteurs de fusion nucléaire, comme ITER ?",
+        "reponseA": "Des millions de degrés Celsius",
+        "reponseB": "Quelques centaines de degrés Celsius",
+        "reponseC": "Température ambiante",
+        "reponseD": "Des milliers de degrés Celsius",
+        "bonne_reponse": 1,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 95,
+        "question": "Qu'est-ce qu'une onde de Langmuir dans un plasma ?",
+        "reponseA": "Une onde de chaleur",
+        "reponseB": "Une onde électromagnétique",
+        "reponseC": "Une onde sonore",
+        "reponseD": "Une onde de densité d'électrons",
+        "bonne_reponse": 4,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 96,
+        "question": "Quel est le principal processus de production d'énergie dans le Soleil et d'autres étoiles ?",
+        "reponseA": "Combustion",
+        "reponseB": "Fusion nucléaire",
+        "reponseC": "Convection",
+        "reponseD": "Fission nucléaire",
+        "bonne_reponse": 2,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 97,
+        "question": "Quel est l'un des défis majeurs pour atteindre la fusion nucléaire contrôlée sur Terre ?",
+        "reponseA": "Confiner et chauffer le plasma de manière efficace",
+        "reponseB": "Contrôler les réactions de fission",
+        "reponseC": "Conserver des champs magnétiques stables",
+        "reponseD": "Maintenir des températures extrêmement basses",
+        "bonne_reponse": 1,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 98,
+        "question": "Quelle est la particule fondamentale qui porte la charge électrique dans un plasma ?",
+        "reponseA": "Le neutrino",
+        "reponseB": "Le proton",
+        "reponseC": "L'électron",
+        "reponseD": "Le neutron",
+        "bonne_reponse": 3,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 99,
+        "question": "Quel est l'objectif principal de la recherche sur la fusion nucléaire ?",
+        "reponseA": "Produire des armes nucléaires",
+        "reponseB": "Produire de l'électricité de manière propre et durable",
+        "reponseC": "Créer de nouveaux éléments chimiques",
+        "reponseD": "Produire des réacteurs de fission plus efficaces",
+        "bonne_reponse": 2,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 100,
+        "question": "Quel est le rôle des champs magnétiques dans la confinement du plasma dans un tokamak ?",
+        "reponseA": "Ils refroidissent le plasma.",
+        "reponseB": "Ils ionisent le plasma",
+        "reponseC": "Ils chauffent le plasma à des températures élevées",
+        "reponseD": "Ils empêchent le plasma de s'échapper en le confinant dans une région toroïdale",
+        "bonne_reponse": 4,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 101,
+        "question": "Quel est l'état de la matière qui se trouve entre un gaz et un solide, caractérisé par la présence de particules chargées ?",
+        "reponseA": "Liquide",
+        "reponseB": "Plasma froid",
+        "reponseC": "Plasme",
+        "reponseD": "Plasma chaud",
+        "bonne_reponse": 3,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 102,
+        "question": "Quelle est la principale différence entre un gaz ordinaire et un plasma ?",
+        "reponseA": "La conductivité électrique",
+        "reponseB": "La composition chimique",
+        "reponseC": "La densité",
+        "reponseD": "La température",
+        "bonne_reponse": 1,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 103,
+        "question": "Quelle est la température typique d'un plasma dans le soleil ?",
+        "reponseA": "Des millions de degrés Celsius",
+        "reponseB": "Des milliards de degrés Celsius",
+        "reponseC": "Des milliers de degrés Celsius",
+        "reponseD": "Des centaines de degrés Celsius",
+        "bonne_reponse": 1,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 104,
+        "question": "Qu'est-ce qu'un tokamak ?",
+        "reponseA": "Un type de fruit exotique",
+        "reponseB": "Un instrument de musique",
+        "reponseC": "Un type de satellite",
+        "reponseD": "Un dispositif pour confiner et stabiliser un plasma",
+        "bonne_reponse": 4,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 105,
+        "question": "Comment est généré le plasma dans un tokamak ?",
+        "reponseA": "Par chauffage par micro-ondes",
+        "reponseB": "Par chauffage laser",
+        "reponseC": "Par chauffage par conduction",
+        "reponseD": "Par chauffage par radiofréquence",
+        "bonne_reponse": 4,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 106,
+        "question": "Quel phénomène permet à un plasma de générer et de maintenir un champ magnétique ?",
+        "reponseA": "La dynamo magnétique",
+        "reponseB": "L'effet Hall",
+        "reponseC": "L'effet Compton",
+        "reponseD": "La couronne solaire",
+        "bonne_reponse": 1,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 107,
+        "question": "Quel type de fusion nucléaire est visé dans les réacteurs à fusion expérimentaux ?",
+        "reponseA": "Fusion oxygène-néon",
+        "reponseB": "Fusion deutérium-deutérium",
+        "reponseC": "Fusion carbone-hélium",
+        "reponseD": "Fusion deutérium-tritium",
+        "bonne_reponse": 4,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 108,
+        "question": "Quel est le principal avantage de la fusion nucléaire par rapport à la fission nucléaire ?",
+        "reponseA": "Elle nécessite moins d'énergie d'activation",
+        "reponseB": "Elle utilise des isotopes plus lourds",
+        "reponseC": "Elle est plus facile à contrôler",
+        "reponseD": "Elle produit moins de déchets radioactifs",
+        "bonne_reponse": 4,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 109,
+        "question": "Quel projet de recherche en physique des plasmas vise à démontrer la faisabilité scientifique et technologique de la fusion nucléaire comme source d'énergie ?",
+        "reponseA": "Hubble",
+        "reponseB": "LHC",
+        "reponseC": "ITER",
+        "reponseD": "Fermilab",
+        "bonne_reponse": 3,
+        "categorie": "physique-des-plasmas"
+}
+###
+POST http://localhost:8887/api/qcm/physique-des-plasmas
+content-type: application/json
+
+{
+        "id": 110,
+        "question": "Quel phénomène se produit lorsqu'un plasma est soumis à un champ électromagnétique oscillant, générant ainsi des ondes électromagnétiques ?",
+        "reponseA": "Rayonnement synchrotron",
+        "reponseB": "Ionisation",
+        "reponseC": "Électrodynamique des plasmas",
+        "reponseD": "Résonance plasma",
+        "bonne_reponse": 3,
+        "categorie": "physique-des-plasmas"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/111
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un semi-conducteur ?",
+        "reponseA": "Un matériau qui ne conduit pas du tout l'électricité",
+        "reponseB": "Un matériau dont la conductivité se situe entre celle d'un conducteur et d'un isolant",
+        "reponseC": "Un matériau qui conduit très bien l'électricité",
+        "reponseD": "Un matériau utilisé uniquement en optique",
+        "bonne_reponse": 2,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/112
+content-type: application/json
+
+{
+        "question": "Quel est le composant électronique de base qui stocke l'information sous forme de bits ?",
+        "reponseA": "Transistor",
+        "reponseB": "Résistance",
+        "reponseC": "Condensateur",
+        "reponseD": "Mémoire",
+        "bonne_reponse": 3,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/113
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction principale d'un amplificateur ?",
+        "reponseA": "Augmenter l'amplitude d'un signal électrique",
+        "reponseB": "Stocker des données",
+        "reponseC": "Convertir un signal analogique en signal numérique",
+        "reponseD": "Réduire le bruit dans un circuit électronique",
+        "bonne_reponse": 1,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/114
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un microcontrôleur ?",
+        "reponseA": "Un composant qui amplifie les signaux audio",
+        "reponseB": "Un circuit intégré qui combine un processeur, de la mémoire et des périphériques d'entrée/sortie",
+        "reponseC": "Un composant utilisé uniquement en radiofréquence",
+        "reponseD": "Un composant qui convertit les signaux numériques en signaux analogiques",
+        "bonne_reponse": 2,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/115
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un transistor bipolaire ?",
+        "reponseA": "Un composant qui possède deux bornes",
+        "reponseB": "Un composant qui a deux états stables",
+        "reponseC": "Un composant qui utilise deux types de semi-conducteurs",
+        "reponseD": "Un composant électronique qui utilise à la fois des électrons et des trous",
+        "bonne_reponse": 4,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/116
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction principale d'un régulateur de tension (régulateur de tension linéaire) ?",
+        "reponseA": "Amplifier un signal électrique",
+        "reponseB": "Convertir un signal analogique en signal numérique",
+        "reponseC": "Stocker des données",
+        "reponseD": "Fournir une tension constante en dépit des variations de l'alimentation",
+        "bonne_reponse": 4,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/117
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un circuit intégré (CI ou puce) ?",
+        "reponseA": "Un composant qui produit des signaux sonores",
+        "reponseB": "Un composant qui convertit le signal numérique en signal analogique",
+        "reponseC": "Un composant qui stocke des données sous forme de bits",
+        "reponseD": "Un composant électronique composé de plusieurs éléments interconnectés sur un substrat",
+        "bonne_reponse": 4,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/118
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction principale d'un oscilloscope ?",
+        "reponseA": "Mesurer la résistance d'un composant",
+        "reponseB": "Visualiser et analyser les signaux électriques dans le domaine temporel",
+        "reponseC": "Mesurer la tension continue",
+        "reponseD": "Générer des signaux électriques",
+        "bonne_reponse": 2,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/119
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction d'un diode électroluminescente (LED) ?",
+        "reponseA": "Amplifier un signal électrique",
+        "reponseB": "Convertir l'énergie électrique en lumière",
+        "reponseC": "Stocker des données",
+        "reponseD": "Convertir la lumière en énergie électrique",
+        "bonne_reponse": 2,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/120
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un capteur infrarouge ?",
+        "reponseA": "Un capteur qui détecte les champs magnétiques",
+        "reponseB": "Un capteur qui mesure la résistance électrique",
+        "reponseC": "Un capteur qui détecte la chaleur émise sous forme d'infrarouges",
+        "reponseD": "Un capteur qui détecte la lumière ultraviolette",
+        "bonne_reponse": 3,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/121
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction d'une diode ?",
+        "reponseA": "Stocker de l'énergie électrique",
+        "reponseB": "Contrôler le courant électrique dans un seul sens",
+        "reponseC": "Convertir le courant continu en courant alternatif.",
+        "reponseD": "Amplifier les signaux électriques",
+        "bonne_reponse": 2,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/122
+content-type: application/json
+
+{
+        "question": "Quelle est l'unité de mesure de la fréquence ?",
+        "reponseA": "Volt (V)",
+        "reponseB": "Ampère (A)",
+        "reponseC": "Watt (W)",
+        "reponseD": "Hertz (Hz)",
+        "bonne_reponse": 4,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/123
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un transistor MOSFET ?",
+        "reponseA": "Un type de transistor utilisé pour amplifier les signaux électriques",
+        "reponseB": "Un composant qui stocke de l'énergie électrique",
+        "reponseC": "Un type de transistor utilisé pour commuter et amplifier les signaux électriques",
+        "reponseD": "Un composant qui génère des signaux électriques",
+        "bonne_reponse": 3,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/124
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction d'un condensateur électrolytique ?",
+        "reponseA": "Convertir le courant alternatif en courant continu",
+        "reponseB": "Réguler la tension dans un circuit",
+        "reponseC": "Amplifier les signaux électriques",
+        "reponseD": "Stocker et libérer de l'énergie électrique",
+        "bonne_reponse": 4,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/125
+content-type: application/json
+
+{
+        "question": "Qu'est-ce que la résonance en électronique ?",
+        "reponseA": "Une condition où la résistance est minimale dans un circuit",
+        "reponseB": "Une condition où un composant stocke de l'énergie électrique",
+        "reponseC": "Une condition où la fréquence d'un circuit correspond à la fréquence du signal appliqué",
+        "reponseD": "Une condition où la tension est constante dans un circuit",
+        "bonne_reponse": 3,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/126
+content-type: application/json
+
+{
+        "question": "Qu'est-ce qu'un capteur de lumière (photorésistance) ?",
+        "reponseA": "Un composant qui génère de la lumière",
+        "reponseB": "Un composant dont la résistance varie en fonction de l'intensité lumineuse",
+        "reponseC": "Un composant qui amplifie les signaux électriques",
+        "reponseD": "Un composant qui stocke de l'énergie électrique",
+        "bonne_reponse": 2,
+        "categorie": "electronique"
+}
+###
+PUT http://localhost:8887/api/qcm/electronique/127
+content-type: application/json
+
+{
+        "question": "Quelle est la fonction d'un redresseur ?",
+        "reponseA": "Mesurer la tension dans un circuit",
+        "reponseB": "Stocker et libérer de l'énergie électrique",
+        "reponseC": "Contrôler le courant électrique dans un seul sens",
+        "reponseD": "Convertir le courant alternatif en courant continu",
+        "bonne_reponse": 4,
+        "categorie": "electronique"
+}
+###
+POST http://localhost:8887/api/qcm/electronique
+content-type: application/json
+
+{
+        "id": 128,
+        "question": "Qu'est-ce qu'un microcontrôleur ?",
+        "reponseA": "Un composant qui amplifie les signaux électriques",
+        "reponseB": "Un composant qui stocke de l'énergie électrique",
+        "reponseC": "Un petit ordinateur intégré dans un seul circuit",
+        "reponseD": "Un composant qui génère des signaux électriques",
+        "bonne_reponse": 3,
+        "categorie": "electronique"
+}
+###
+POST http://localhost:8887/api/qcm/electronique
+content-type: application/json
+
+{
+        "id": 129,
+        "question": "Quelle est la fonction d'un relais électromagnétique ?",
+        "reponseA": "Générer des signaux électriques",
+        "reponseB": "Stocker et libérer de l'énergie électrique",
+        "reponseC": "Contrôler un circuit à distance en utilisant un courant faible",
+        "reponseD": "Amplifier les signaux électriques",
+        "bonne_reponse": 3,
+        "categorie": "electronique"
+}
+###
+POST http://localhost:8887/api/qcm/electronique
+content-type: application/json
+
+{
+        "id": 130,
+        "question": "Quelle est la différence entre un condensateur électrolytique et un condensateur céramique ?",
+        "reponseA": "Un condensateur électrolytique a une plus grande capacité, mais une polarité",
+        "reponseB": "Un condensateur céramique a une plus grande capacité, mais une polarité",
+        "reponseC": "Un condensateur électrolytique n'a pas de polarité",
+        "reponseD": "Un condensateur céramique est utilisé pour stocker de l'énergie électrique",
+        "bonne_reponse": 1,
+        "categorie": "electronique"
+}

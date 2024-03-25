@@ -38,7 +38,8 @@ questionRouter.put("/:id", async(req, res) => {
     const reponseC = req.body.reponseC;
     const reponseD = req.body.reponseD;
     const bonne_reponse = req.body.bonne_reponse;
-    const maQuestion = { question, reponseA ,reponseB, reponseC, reponseD, bonne_reponse };
+    const categorie = req.body.categorie;
+    const maQuestion = { question, reponseA ,reponseB, reponseC, reponseD, bonne_reponse, categorie };
     await Question.update(maQuestion,{where: {id}});
     res.status(200).send(JSON.stringify(maQuestion));
 })

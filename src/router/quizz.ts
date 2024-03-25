@@ -268,5 +268,5 @@ quizzRouter.get("/:idQuizz/result/correction", async(req, res) => {
         }
     })
     const resultat = {"question_def" : question_def,"reponse_donnee_def" : reponse_donnee_def,"question_bonne_reponse_def" : question_bonne_reponse_def};
-    res.status(200).json(resultat);    
+    res.status(200).json(resultat);
 })
