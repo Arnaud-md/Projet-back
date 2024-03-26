@@ -1,15 +1,11 @@
 import { Router } from "express";
 import { Question, Quizz, Reponse } from "..";
-import { QuestionModel } from "../model/Question";
 import jwt from "jsonwebtoken";
 import { DecodeToken, checkToken } from "../middlewares/checkToken";
-import { log } from "console";
 
 export const quizzRouter = Router();
 
 quizzRouter.post("/:type", async (req, res) => {
-    //const categorie = req.body.categorie;
-    //const numQuestion= req.body.numQuestion;
     let nbfirstquestion = 0;
     let coeff = 0;
     if(req.params.type==="informatique") {
@@ -61,12 +57,8 @@ quizzRouter.post("/:type", async (req, res) => {
     const date_creation = dateToString;
     const pourcentage_reussite = 0;
     
-    //const monQCM = { subject, numQuestion, question, reponseA, reponseB, reponseC, reponseD, valide:bonnereponse };
     const monQuizz = {idq1, idq2, idq3, idq4, idq5, idq6, idq7, idq8, idq9, idq10, date_creation, pourcentage_reussite};
-    //console.log("monQCM : ",monQCM);
-    //QCM.create(monQCM);
     const newQuizz = await Quizz.create(monQuizz);
-    //res.json(monQCM);
     const newQuizzData = newQuizz.dataValues;
     delete newQuizzData.idq1;
     delete newQuizzData.idq2;
@@ -84,7 +76,6 @@ quizzRouter.get("/", async(req, res) => {
     const allQuizz = await Quizz.findAll();
     res.status(200).send(JSON.stringify(allQuizz));
 })
-//qcmRouter.get("/:numQuestion", async(req, res) => {
 quizzRouter.get("/:id", async(req, res) => {
     const monQuizz = await Quizz.findOne({where:{id:req.params.id}});
     res.status(200).send(JSON.stringify(monQuizz));
@@ -107,15 +98,12 @@ quizzRouter.put("/:id", async(req, res) => {
     await Quizz.update(monQuizz,{where: {id}});
     res.status(200).send(JSON.stringify(monQuizz));
 })
-
 quizzRouter.delete("/:id", async(req, res) => {
     await Quizz.destroy({
         where: {id: req.params.id }
     });
-  
     res.send('ok');
 })
-
 quizzRouter.get("/:idQuizz/question", async(req, res) => {
     const nbResponseForQuizz = await Reponse.count({
         where: {
@@ -127,7 +115,6 @@ quizzRouter.get("/:idQuizz/question", async(req, res) => {
     const maQCM = await Question.findOne({where:{id: questionId}});
     res.status(200).send(JSON.stringify(maQCM));
 })
-
 quizzRouter.post("/:idQuizz/reponse/:indexReponse", async (req, res) => {
     const decoded = jwt.decode(req.token!) as DecodeToken
     const idQuizzNumber = parseInt(req.params.idQuizz);
@@ -143,26 +130,17 @@ quizzRouter.post("/:idQuizz/reponse/:indexReponse", async (req, res) => {
         decodedId=decoded.id;
     }
     const maReponse = {user_id: decodedId, quizz_id:idQuizzNumber, question_id:questionId, reponse_donnee:parseInt(req.params.indexReponse)};
-
     const newReponse = await Reponse.create(maReponse);
     res.json(newReponse);
 })
-
 quizzRouter.get("/:idQuizz/result", async(req, res) => {
     let score = 0;
-    // const nbResponseForQuizz = await Reponse.count({
-    //     where: {
-    //         quizz_id: req.params.idQuizz
-    //     }
-    // })
     const allReponses = await Reponse.findAll({
         where: {
             quizz_id: req.params.idQuizz
         }
     })
-    console.log("allReponses : ",allReponses);
     let cat = "";
-
     const allQuestions = await Promise.all(
         allReponses.map(reponse => 
             Question.findOne({
@@ -172,27 +150,17 @@ quizzRouter.get("/:idQuizz/result", async(req, res) => {
             })
         )
     )
-
     allReponses.forEach( (reponse, indexReponse) => {
         const question = allQuestions[indexReponse]
-        console.log("question : ",question);
         if(question) {
             if(reponse.reponse_donnee === question.bonne_reponse) {
                 score++;
             }
-            console.log("reponse.reponse_donnee : ",reponse.reponse_donnee);
-            console.log("question.bonne_reponse : ", question.bonne_reponse);
             cat = question.categorie;
-            console.log("cat : ",cat);
-            console.log("scoreBack : ",score);
         }
-    })
-
-    console.log('thomas');
-    
+    })   
     res.status(200).json({score : score, subject : cat});
 })
-
 quizzRouter.get("/:idQuizz/status", async(req, res) => {
     let status = "not validate";
     const nbResponseForQuizz = await Reponse.count({
@@ -205,22 +173,14 @@ quizzRouter.get("/:idQuizz/status", async(req, res) => {
     }
     res.status(200).send(status);
 })
-
 quizzRouter.get("/:idQuizz/result/correction", async(req, res) => {
     let objCorrection = {};
-    // const nbResponseForQuizz = await Reponse.count({
-    //     where: {
-    //         quizz_id: req.params.idQuizz
-    //     }
-    // })
     const allReponses = await Reponse.findAll({
         where: {
             quizz_id: req.params.idQuizz
         }
     })
-    console.log("allReponses : ",allReponses);
     let cat = "";
-
     const allQuestions = await Promise.all(
         allReponses.map(reponse => 
             Question.findOne({
@@ -235,9 +195,7 @@ quizzRouter.get("/:idQuizz/result/correction", async(req, res) => {
     let question_def = [] as string[];
     allReponses.forEach( (reponse, indexReponse) => {
         const question = allQuestions[indexReponse]
-        console.log("question : ",question);
         if(question) {
-            
             if(reponse.reponse_donnee !== question.bonne_reponse) {
                 if(reponse.reponse_donnee===1) {
                     reponse_donnee_def.push(question.reponseA);
