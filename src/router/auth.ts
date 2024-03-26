@@ -29,7 +29,8 @@ authRouter.post("/local/register", async(req, res) => {
       delete newUserData.password
       //res.status(200).json(newUserData);
       
-      const tokenJWT = jwt.sign({ data: 'foobar'}, 'secret', { expiresIn: '1h' });
+      //const tokenJWT = jwt.sign({ data: newUserData}, 'secret', { expiresIn: '1h' });
+      const tokenJWT = jwt.sign(newUserData, process.env.JWT_SECRET!, { expiresIn: '1h' });
         res.status(200).send(tokenJWT);
       //res.status(200).send(hash);
     }
