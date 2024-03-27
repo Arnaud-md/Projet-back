@@ -9,15 +9,20 @@ userRouter.get("/", async(req, res) => {
     res.status(200).send(JSON.stringify(allUsers));
 })
 userRouter.get("/me", checkToken, async (req, res) => {
-    const decoded = jwt.decode(req.token!) as DecodeToken
-    const user = await Users.findOne({ where: { id: decoded.id } });
-    if (user) {
-        delete user.dataValues.password;
-        res.json(user);
-    }
-    else {
-        res.status(404).send("User not found");
-    }
+        if(req.token) {
+            const decoded = jwt.decode(req.token!) as DecodeToken
+            const user = await Users.findOne({ where: { id: decoded.id } });
+            if(user) {
+                delete user.dataValues.password;
+                res.json(user);
+            }
+            else {
+                res.status(404).send("User not found");
+            }
+        }
+        else {
+            res.status(404).send("User not found");
+        }
 });
 userRouter.post("/", async(req, res) => {
     const nom = req.body.nom;
